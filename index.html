@@ -6,32 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body onload="addTemplate()">
 
     <div id="body">
         <header>
             <nav>
-                <div style="background-color: aqua;">
-                    BWIN / 
+                <div class="nav-select">
+                    <div class="nav-select-text">bwin</div>
+                    <!-- <div class="dropdown nav-select-btn">
+                        <button class="btn btn-primary dropdown-toggle nav-select-btn" type="button"
+                            data-toggle="dropdown">Dashboard
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div> -->
                 </div>
-                <div style="background-color: rgb(255, 217, 0);"></div>
-                <div style="background-color: rgb(4, 0, 255);"></div>
-                    <!-- <div style="background-color: rgb(153, 179, 179);"></div>
-                    <div style="background-color: rgb(0, 255, 0);">lor</div> -->
+                <div class="nav-pestan">
+                    <div class="nav-pestan-btn">SPORT</div class="nav-pestan-btn">
+                    <div class="nav-pestan-btn">LIVE BETTING</div>
+                    <div class="nav-pestan-btn">VIRTUALES</div>
+                    <div class="nav-pestan-btn">CASINO</div>
+                    <div class="nav-pestan-btn">LIVE CASSING</div>
+                    <div class="nav-pestan-btn">GAMES</div>
+                    <div class="nav-pestan-btn">POKER</div>
+                    <div class="nav-pestan-btn">NEWS</div>
+                </div>
+                <div style="background-color: rgb(146, 145, 202);"></div>
             </nav>
 
-            <div>
-
+            <div class="grid-col-2fr-7fr-r-1fr">
+                <div class="header-perfil-detall">
+                    <div class="header-perfil-detall-info">
+                        <div class="header-perfil-detall-info-gal">
+                            <!-- <div class="header-perfil-detall-info-gal-photo"> -->
+                            <img class="header-perfil-detall-info-gal-photo-img"
+                                src="https://images.8tracks.com/cover/i/002/858/767/k4v967-l-610x610-shirt-tumblr-black-shirt-white-words-grunge-sunglasses-4625.jpg?rect=0,0,610,610&q=98&fm=jpg&fit=max">
+                            <!-- </div> -->
+                        </div>
+                        <div class="header-perfil-detall-info-text">
+                            <div class="header-perfil-detall-info-text-uno">
+                                Slava Kornillov
+                            </div>
+                            <div class="header-perfil-detall-info-text-dos">
+                                Big Bogs - 3 level
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-perfil-detall-number">
+                        <div class="header-perfil-detall-number-uno">
+                            <div>
+                                <i class="fas fa-user-check header-icon"></i>
+                            </div>
+                            <div class="header-perfil-detall-number-uno-data">
+                                <label class="header-perfil-detall-number-uno-data-text-uno">
+                                    2,434
+                                </label>
+                                <label class="header-perfil-detall-number-uno-data-text-dos">
+                                    Followers
+                                </label>
+                            </div>
+                        </div>
+                        <div class="header-perfil-detall-number-uno">
+                            <div>
+                                <i class="fas fa-user-plus header-icon"></i>
+                            </div>
+                            <div class="header-perfil-detall-number-uno-data">
+                                <label class="header-perfil-detall-number-uno-data-text-uno">
+                                    1,921
+                                </label>
+                                <label class="header-perfil-detall-number-uno-data-text-dos">
+                                    Followers
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- none -->
+                <div class="header-perfil-detall-options">
+                    <div class="header-perfil-detall-options-one">
+                    </div>
+                </div>
+                <!-- end none -->
             </div>
         </header>
 
-        <section>
-            dfgdsfg
+        <section class="grid-col-2fr-7fr-r-1fr">
+            <div class="section-icon">
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="fas fa-align-justify"></i>
+                    </div>
+                    <div>
+                        Default
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="fas fa-feather"></i>
+                    </div>
+                    <div>
+                        Pests
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div>
+                        Default
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="far fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        Rewards
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <div>
+                        Notifications
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="far fa-comment"></i>
+                    </div>
+                    <div>
+                        Menssages
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div>
+                        Teams
+                    </div>
+                </div>
+                <div class="section-icon-detall">
+                    <div class="section-icon-detall-img">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div>
+                        Settings
+                    </div>
+                </div>
+            </div>
+            <div class="section-none"></div>
         </section>
     </div>
+
+    <template id="selectsquare">
+        <div class="square">
+            <div class="square-onetext">
+                Past
+            </div>
+            <div class="square-twotext">
+                Matches
+            </div>
+            <div class="square-btn">
+                <button class="btn square-btn-icon"><i class="fas fa-ellipsis-v square-btn-icon-img"></i></button>
+            </div>
+        </div>
+    </template>
 
     <script src="index.js"></script>
 </body>
