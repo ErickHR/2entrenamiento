@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+    width: 100%;
+}
+/* header */
+header{
+    background-color: rgba(0, 0, 255, 0.623);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1frs;
+    grid-template-rows: 1fr 3fr;
+}
+nav{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 1fr;
+}
+/* header */
+section{
+    background-color: rgba(235, 235, 243, 0.795);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
